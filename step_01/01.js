@@ -22,9 +22,9 @@ work = "Frontend Developer"
 
 // Create a structured object for the table
 const addDate = {
-    cpy: company,
-    ads: addresh,
-    wk: work,
+  cpy: company,
+  ads: addresh,
+  wk: work,
 }
 
 console.log([addDate]);
@@ -49,23 +49,23 @@ const accounts = [
 console.table(accounts);
 
 // step_04
-const myName= 'avijit';
-let lastName ='mahapatra'
-var age ='24'
-console.log([myName,lastName,age])
+const myName = 'avijit';
+let lastName = 'mahapatra'
+var age = '24'
+console.log([myName, lastName, age])
 
-lastName='Jit'
-age ='22'
-console.log([lastName,age])
+lastName = 'Jit'
+age = '22'
+console.log([lastName, age])
 
-const allData ={
-    Name:myName,
-    Lastname:lastName,
-    Age:29,
+const allData = {
+  Name: myName,
+  Lastname: lastName,
+  Age: 29,
 }
 console.table([
-    {Name:myName,Lastname:lastName,Age:29},
-    {Name:"Rintu",Lastname:"Adi",Age:33}
+  { Name: myName, Lastname: lastName, Age: 29 },
+  { Name: "Rintu", Lastname: "Adi", Age: 33 }
 ])
 
 
@@ -81,10 +81,9 @@ carPassword = 'uco123!';
 carCity = 'New Delhi';
 
 // Basic validation
-if (!carEmail.includes('@')) 
-{
+if (!carEmail.includes('@')) {
   console.error('Invalid email format');
-}else if (carPassword.length < 5) {
+} else if (carPassword.length < 5) {
   console.error('Password must be at least 6 characters');
 } else {
   const carData = {
@@ -107,15 +106,15 @@ bikeEmail = 'bike300@gmail.com';
 bikePassword = '0000';
 bikeCity = 'New Delhi,odisha';
 
-console.table([bikeId,bikePassword,bikeCity])
+console.table([bikeId, bikePassword, bikeCity])
 
 // Basic validation
-if(!bikeEmail.includes('@')){
-    console.log('Me Email Is Invalid')
-}else if(bikePassword.length < 4){
-    console.log('Password must be at least 6 characters')
-}else{
-    const bikeData = {
+if (!bikeEmail.includes('@')) {
+  console.log('Me Email Is Invalid')
+} else if (bikePassword.length < 4) {
+  console.log('Password must be at least 6 characters')
+} else {
+  const bikeData = {
     bikeID: bikeId,
     Email: bikeEmail,
     Password: bikePassword,
@@ -128,25 +127,25 @@ if(!bikeEmail.includes('@')){
 
 // PENDING WORK
 
-// const accountId = 998877;
-// let accountEmail = 'polo@gmail.com';
-// let accountPassword = '1234!';
-// let accountCity = 'bhubaneswar';
+const accountId = 998877;
+let accountEmail = 'polo@gmail.com';
+let accountPassword = '1234!';
+let accountCity = 'bhubaneswar';
 
-// function updateAndDisplayAccount(email, password, city) {
-//   accountEmail = email;
-//   accountPassword = password;
-//   accountCity = city;
-  
-//   const accountData = {
-//     AccountID: accountId,
-//     Email: accountEmail,
-//     Password: accountPassword,
-//     City: accountCity
-//   };
-//   console.table([accountData]);
-// }
+function updateAndDisplayAccount(email, password, city) {
+  accountEmail = email;
+  accountPassword = password;
+  accountCity = city;
 
-// Update and display
-// updateAndDisplayAccount('uco@gmail.com', 'uco123!', 'New Delhi');
+  const accountData = {
+    AccountID: accountId,
+    Email: accountEmail,
+    Password: accountPassword,
+    City: accountCity
+  };
+  console.table([accountData]);
+}
+
+ Update and display
+updateAndDisplayAccount('uco@gmail.com', 'uco123!', 'New Delhi');
 
